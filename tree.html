@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plant a Tree - Deepika Vusarthi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5 text-center">
+
+    <!-- Header -->
+    <h1 class="mb-4">Plant a Tree - Deepika Vusarthi</h1>
+    <p class="lead">Let’s make the world greener, one tree at a time.</p>
+
+    <!-- Row 1: Letters (col-sm-2) -->
+    <div class="row mt-4">
+        <div class="col-sm-2 border p-2 fw-bold">V</div>
+        <div class="col-sm-2 border p-2 fw-bold">U</div>
+        <div class="col-sm-2 border p-2 fw-bold">S</div>
+        <div class="col-sm-2 border p-2 fw-bold">A</div>
+        <div class="col-sm-2 border p-2 fw-bold">R</div>
+        <div class="col-sm-2 border p-2 fw-bold">T</div>
+    </div>
+
+    <!-- Row 2: Tree Names (col-md) -->
+    <div class="row mt-2">
+        <div class="col-md border p-2">Valley Oak</div>
+        <div class="col-md border p-2">Umbrella Pine</div>
+        <div class="col-md border p-2">Spruce</div>
+        <div class="col-md border p-2">Ash</div>
+        <div class="col-md border p-2">Redwood</div>
+        <div class="col-md border p-2">Tulip Tree</div>
+    </div>
+
+    <!-- Explanation for Part 3 -->
+    <div class="mt-4 text-start">
+        <h5>Responsive Behavior Explanation</h5>
+        <p>
+            The tree names row breaks first when the browser window is reduced.
+            This happens because the tree names use <strong>col-md</strong>, which keeps the columns
+            in one row only on medium screens and larger. When the screen becomes smaller than the
+            medium breakpoint, these columns stack vertically.
+        </p>
+        <p>
+            The letters row uses <strong>col-sm-2</strong>, which keeps the layout horizontal on small
+            screens and larger. Therefore, the letters row stays horizontal longer and breaks after
+            the tree names row.
+        </p>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
