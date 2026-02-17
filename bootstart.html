@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tree Gallery, Table, and Buttons</title>
+  <title>Tree Gallery, Table, Buttons and Dropdown</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -30,6 +30,25 @@
 </head>
 
 <body class="container mt-4">
+
+  <!-- ===================== -->
+  <!-- Part 7: Dropdown -->
+  <!-- ===================== -->
+  <div class="dropdown text-center mb-4">
+    <button class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="Navigation Dropdown">
+      Go to Pages
+    </button>
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="first.html">First Page</a></li>
+      <li><a class="dropdown-item" href="second.html">Second Page</a></li>
+    </ul>
+  </div>
+
 
   <!-- ===================== -->
   <!-- Part 4: Image Gallery -->
@@ -61,7 +80,6 @@
   <div class="table-responsive mb-5">
     <table class="table table-striped table-bordered table-hover table-sm">
 
-      <!-- Caption BEFORE thead -->
       <caption class="caption-top text-center">
         Letters with Corresponding Trees, Rivers, and Parks
       </caption>
@@ -128,25 +146,24 @@
   <!-- ===================== -->
   <h2 class="text-center mb-3">Letter Button Groups</h2>
 
-  <!-- Toolbar wrapper -->
   <div class="btn-toolbar justify-content-center gap-3 mb-5"
        role="toolbar"
        aria-label="Letter Button Toolbar">
 
-    <!-- Group 1: Letters with images (M, O, P) - Success -->
+    <!-- Group 1 -->
     <div class="btn-group" role="group" aria-label="Image Letters Group">
       <button type="button" class="btn btn-success">M</button>
       <button type="button" class="btn btn-success">O</button>
       <button type="button" class="btn btn-success">P</button>
     </div>
 
-    <!-- Group 2: Two buttons - Warning (alert style) -->
+    <!-- Group 2 -->
     <div class="btn-group" role="group" aria-label="Secondary Letters Group">
       <button type="button" class="btn btn-warning">A</button>
       <button type="button" class="btn btn-warning">B</button>
     </div>
 
-    <!-- Group 3: Remaining button - Danger -->
+    <!-- Group 3 -->
     <div class="btn-group" role="group" aria-label="Remaining Letter Group">
       <button type="button" class="btn btn-danger">C</button>
     </div>
@@ -154,7 +171,7 @@
   </div>
 
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS (required for dropdown) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
