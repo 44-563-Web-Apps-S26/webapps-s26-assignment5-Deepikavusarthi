@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tree Image Gallery</title>
+  <title>Tree Image Gallery and Table</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     .tree-large {
       width: 450px;
       height: 450px;
-      object-fit: cover; /* clips image to square */
+      object-fit: cover;
       border-radius: 10px;
       border: 2px solid #ddd;
     }
@@ -31,9 +31,10 @@
 
 <body class="container mt-4">
 
+  <!-- Part 4: Image Gallery -->
   <h1 class="text-center mb-4">Tree Gallery</h1>
 
-  <!-- First div container: Large Responsive Images -->
+  <!-- Large Images -->
   <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
     <img src="oak.jpg" alt="Oak Tree" class="tree-large img-fluid">
     <img src="maple.jpg" alt="Maple Tree" class="tree-large img-fluid">
@@ -42,11 +43,81 @@
 
   <h2 class="text-center mb-3">Thumbnails</h2>
 
-  <!-- Second div container: Thumbnails -->
-  <div class="d-flex flex-wrap justify-content-center gap-3">
+  <!-- Thumbnails -->
+  <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
     <img src="oak.jpg" alt="Oak Thumbnail" class="tree-thumb">
     <img src="maple.jpg" alt="Maple Thumbnail" class="tree-thumb">
     <img src="pine.jpg" alt="Pine Thumbnail" class="tree-thumb">
+  </div>
+
+
+  <!-- Part 5: Bootstrap Table -->
+  <h2 class="text-center mb-3">Trees, Rivers, and Parks</h2>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover table-sm">
+
+      <!-- Caption BEFORE thead -->
+      <caption class="caption-top text-center">
+        Letters with Corresponding Trees, Rivers, and Parks
+      </caption>
+
+      <!-- Table Head -->
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Tree</th>
+          <th scope="col">River</th>
+          <th scope="col">Park</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr class="table-success">
+          <th scope="row">A</th>
+          <td>Ash</td>
+          <td>Amazon</td>
+          <td>Acadia National Park</td>
+        </tr>
+
+        <tr>
+          <th scope="row">B</th>
+          <td>Birch</td>
+          <td>Brahmaputra</td>
+          <td>Banff National Park</td>
+        </tr>
+
+        <tr class="table-info">
+          <th scope="row">C</th>
+          <td>Cedar</td>
+          <td>Colorado</td>
+          <td>Central Park</td>
+        </tr>
+
+        <tr>
+          <th scope="row">M</th>
+          <td>Maple</td>
+          <td>Mississippi</td>
+          <td>Mount Rainier National Park</td>
+        </tr>
+
+        <tr class="table-warning">
+          <th scope="row">O</th>
+          <td>Oak</td>
+          <td>Ohio</td>
+          <td>Olympic National Park</td>
+        </tr>
+
+        <tr>
+          <th scope="row">P</th>
+          <td>Pine</td>
+          <td>Po</td>
+          <td>Plitvice Lakes National Park</td>
+        </tr>
+      </tbody>
+
+    </table>
   </div>
 
   <!-- Bootstrap JS -->
