@@ -12,13 +12,58 @@
 
 <body>
 
+<!-- ===================== -->
+<!-- Part 8: Navbar -->
+<!-- ===================== -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Tree options navbar">
+    <div class="container-fluid">
+
+        <!-- 2) Brand -->
+        <a class="navbar-brand" href="tree.html">Tree options</a>
+
+        <!-- 3) Toggler button -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#treeNavbar"
+                aria-controls="treeNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 4) Collapsible div -->
+        <div class="collapse navbar-collapse" id="treeNavbar">
+
+            <!-- 5) Navigation list -->
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                <!-- 6) First link -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="first.html">First</a>
+                </li>
+
+                <!-- 6) Second link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="second.html">Second</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ===================== -->
+<!-- Page Content (Part 3) -->
+<!-- ===================== -->
 <div class="container mt-5 text-center">
 
     <!-- Header -->
     <h1 class="mb-4">Plant a Tree - Deepika Vusarthi</h1>
     <p class="lead">Let’s make the world greener, one tree at a time.</p>
 
-    <!-- Row 1: Letters (col-sm-2) -->
+    <!-- Row 1: Letters -->
     <div class="row mt-4">
         <div class="col-sm-2 border p-2 fw-bold">V</div>
         <div class="col-sm-2 border p-2 fw-bold">U</div>
@@ -28,7 +73,7 @@
         <div class="col-sm-2 border p-2 fw-bold">T</div>
     </div>
 
-    <!-- Row 2: Tree Names (col-md) -->
+    <!-- Row 2: Tree Names -->
     <div class="row mt-2">
         <div class="col-md border p-2">Valley Oak</div>
         <div class="col-md border p-2">Umbrella Pine</div>
@@ -38,7 +83,7 @@
         <div class="col-md border p-2">Tulip Tree</div>
     </div>
 
-    <!-- Explanation for Part 3 -->
+    <!-- Explanation -->
     <div class="mt-4 text-start">
         <h5>Responsive Behavior Explanation</h5>
         <p>
@@ -56,9 +101,8 @@
 
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS (bundle includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
